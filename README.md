@@ -126,8 +126,17 @@ Use TDD to implement the following methods on the `Library` class:
 
 | Method Name              | Return Value        |
 |--------------------      |-------------------- |
-| publication_time_frame(author)   | Takes an `Author` object as an argument and returns a hash with two key/value pairs: `:start` which points to the publication year of the `Author`'s first book (string). `:end` which points to the publication year of the `Author`'s last book (string). `Example: {:start=>"1847", :end=>"1857"}` |
+| publication_time_frame(author)  
+
+| Takes an `Author` object as an argument
+and returns a hash with two key/value pairs: `:start` which points to the publication year of the `Author`'s first book (string). 
+
+`:end` which points to the publication year of the `Author`'s last book (string). `Example: {:start=>"1847", :end=>"1857"}` |
+
+
 | checkout(book)           | Takes a `Book` as an argument. It should return `false` if a `Book` does not exist in the library or it is already checked out. Otherwise, it should return true indicating that the book has been checked out. |
+
+
 | checked_out_books        | Return an array of `Book` objects that are currently checked out. |
 | return(book)             | Takes a `Book` as an argument. Calling this method means that a book is no longer checked out. |
 
